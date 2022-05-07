@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply Loan</title>
+  <link rel="shortcut icon" href="../images/logo/blue-logo-02.jpg">
+  <link rel="stylesheet" href="../css/common-style.css">
+  <link rel="stylesheet" href="../css/Online-banking-application.css">
+
+  <!-- fontawesome link for add icons in web page  -->
+  <script src="https://kit.fontawesome.com/4e05476d91.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="container" id="m-cont">
+    <nav class="account-nav">
+      <div class="logo-img">
+        <a href="../html/home.html"><img src="../images/logo/blue-logo-02.jpg" alt="" class="bank-logo"></a>
+      </div>
+    </nav>
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Online Banking</h1>
+        <h2>Application Form</h2>
+      </div>
+    </section>
+
+    <!-- main section -->
+    <section class="main-section">
+      <div class="form-content">
+        <form action="#" method="post"> 
+          <div class="topic">
+            <label for="">Personal Information</label>
+          </div>                 
+          <div class="form-item">
+            <label for="">Name with Initials: </label>
+            <input type="text" name="fullName" id="fullName" class="f-input" placeholder="ex:- A.P.Perera" required>
+          </div>
+          <div class="form-item">
+            <label for="">NIC Number: </label>
+            <input type="text" name="NIC" id="NIC" class="f-input" placeholder="NIC Number" required>
+          </div>
+          <div class="form-item">
+            <label for="">Account Number: </label>
+            <input type="text" name="AccNo" id="AccNo" class="f-input" placeholder="Account Number" required>
+          </div>
+          <div class="form-item">
+            <label for="">Mobile Phone No: </label>
+            <input type="text" name="TPNumber" id="tpnumber" class="f-input" placeholder="Mobile Phone No(+94)" required>
+          </div>
+          <div class="form-item">
+            <label for="">Permanent Address: </label>
+            <input type="text" name="address" id="adress" class="f-input" placeholder="Permanent Address" required>
+          </div>
+          <div class="form-item">
+            <label for="">Email: </label>
+            <input type="email" name="email" id="email" class="f-input" placeholder="example@gmail.com" required>
+          </div><br>
+          <div class="topic">
+            <label for="">Online Banking</label>
+          </div>
+          <div class="form-item">
+            <label for="">Credit/Debit card No: </label>
+            <input type="text" name="cardNo" id="cardNo" class="f-input" placeholder="Credit/Debit card No" required>
+          </div>
+          <div class="form-item">
+            <label for="">Required Package : </label>
+            <div>
+              <input type="checkbox" name="sms" id="sms"  required><span id="radio">Online Banking  </span><br><br>
+              <input type="checkbox" name="sms" id="sms"  required><span id="radio">Mobile Banking  </span>
+            </div>
+          <div class="form-item">
+            <label for="">SMS Alerts: </label>
+            <div>
+              <span id="smsType">Activation </span><input type="radio" name="sms" id="sms" value="Activation" required>
+              <span id="smsType">Deactivation </span><input type="radio" name="sms" id="sms" value="Deactivation" required>
+            </div>
+          <div class="agree-item">
+            <input type="checkbox" name="agree" id="agree" required>
+            <label for="">I agree to <span>terms & conditions</span></label>
+          </div>
+          <div class="form-btn">
+            <input type="reset" value="Reset" id="resetBtn">
+            <input type="submit" value="Submit Application" id="submitBtn">
+          </div>
+        </form>
+
+    </section>
+    <!-- end of main section -->
+
+    <!-- footer -->
+    <footer>
+      <p class="copy-right">&copy;copyright &copy;Local Trust Bank(PVT).LTD <span id="cpy-date"></span> .All rights reserved</p>
+    </footer>
+    <!-- end of footer -->
+  </main>
+  <script src="../JS/script.js"></script>
+
+</body>
+
